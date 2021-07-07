@@ -1,4 +1,53 @@
-<html>
-<p> Welcome <%= user.name %></p>
-<a href="/users/logout">Logout</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="static/stylesheets/dashboard.css">
+</head>
+<body>
+	<nav>
+		<a href="">BookFace</a>
+		<input type="text" placeholder="Search on BookFace">
+		<a href="">Profile</a>
+	</nav>
+	<section class="welcome">
+		<div class="profil-pic">
+			PIC
+		</div>
+		<div>
+			<div class="titles">
+			<h1>Your Dashboard</h1>
+			</div>
+			<div class="infos">
+				<h3> Welcome <%= user.name %></h1>
+				<a href="/users/logout">Logout</a>
+			</div>
+		</div>
+		<div></div>
+		
+	</section>
+	<section class="post">
+		<div class="yourPost">
+			<p>Your recent posts</p>
+			<div class="postFetch">
+				<h5>Date: 07.06.21</h5>
+				<p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque delectus quam ipsum voluptatem consectetur temporibus alias libero aliquam vero. Molestias, eum dolorum blanditiis enim ullam dolore, aliquam vero voluptates ab."</p>
+			</div>
+			<div class="postFetch">
+				<h5>Date: 07.06.21</h5>
+				<p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque delectus quam ipsum voluptatem consectetur temporibus alias libero aliquam vero. Molestias, eum dolorum blanditiis enim ullam dolore, aliquam vero voluptates ab."</p>
+			</div>
+			<div class="postFetch">
+				<h5>Date: 07.06.21</h5>
+				<p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque delectus quam ipsum voluptatem consectetur temporibus alias libero aliquam vero. Molestias, eum dolorum blanditiis enim ullam dolore, aliquam vero voluptates ab."</p>
+			</div>
+			
+		</div>
+	</section>
+
+</body>
 </html>
+
+

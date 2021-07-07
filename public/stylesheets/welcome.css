@@ -1,0 +1,37 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+nav{
+	display: flex;
+	justify-content:center;
+	margin: 50px;
+}
+
+.welcome-card{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #00bcd4;
+    align-items: center;
+    margin: 130px 221px;
+    padding-top: 60px;
+    padding-bottom: 150px;
+    box-shadow: grey 0px 3px 8px -1px;
+    border-radius: 10px;
+}
+
+.welcome-card h1{
+	margin-bottom: 15px;
+}
+
+.welcome-card p{
+	margin-bottom: 15px;
+}
+
+.register-login a:nth-child(1){
+	margin-right: 15px;
+}
+
