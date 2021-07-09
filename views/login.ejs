@@ -1,23 +1,35 @@
-<h1> Login </h1>
-<%- include ('./partials/messages') %>
-<form action="/users/login" method="POST">
-<div>
-<label for="email">Email</label>
-<input
-type="email"
-name="email"
-placeholder="Enter Email"
-/>
-</div>
-<div>
-    <label for="password">Password</label>
-    <input
-      type="password"
-      name="password"
-      placeholder="Enter Password"
-    />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookFace - Login</title>
+  <link rel="stylesheet" type="text/css" href="static/stylesheets/login.css">
+</head>
+<body>
+  <div class="container">
+    <h1> Login </h1>
+    <%- include ('./partials/messages') %>
+    <form action="/users/login" method="POST">
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="Enter Email"/>
+      </div>
+      <div>
+          <label for="password">Password</label>
+          <input type="password" name="password" placeholder="Enter Password"/>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-block">Login</button>
+         
+    </form>
+
+
+  </div>
   
-</div>
-<button type="submit" class="btn btn-primary btn-block">Login</button>
-   
-</form>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,104 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	width: 100%;
+	height: 100vh;
+	font-family: 'Quicksand', sans-serif;
+}
+
+nav{
+	display: flex;
+	justify-content: space-between;
+	padding: 50px;
+	background: #00bcd4;
+}
+
+nav a{
+	text-decoration: none;
+	color: white;
+	font-weight: 700;
+}
+
+.writepost{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img{
+	margin-right: 15px;
+}
+
+.inputPost{
+	display: flex;
+}
+
+.inputPost input{
+    border-radius: 20px;
+    border: none;
+    background-color: #9e9e9e5e;
+    padding: 10px;
+}
+
+.inputPost button{
+	margin-left: 15px;
+    width: 70px;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    background: #00bcd4;
+    color: white;
+}
+
+.postFetched{
+	padding: 50px 300px;
+	background-color: #f0f2f5;
+	    height: 100vh;
+}
+
+.post{
+	margin: 50px;
+}
+
+.yourPost{
+	display: flex;
+    flex-direction: column;
+    padding: 25px;
+    width: 100%;
+    text-align: center;
+}
+
+.yourPost p {
+	margin-bottom: 25px;
+}
+
+.postFetch{
+	background: white;
+	box-shadow: grey 0px 3px 8px -1px;
+	border-radius: 10px;
+	margin-bottom: 25px;
+}
+
+.postFetch .name{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid gray;
+}
+
+.postFetch h3{
+	padding-bottom: 15px;
+}
+
+.postFetch h5{
+	margin-bottom: 15px;
+	text-align: end;
+	padding: 15px;
+}
+
+.postFetch p{
+	padding: 0 45px;
+}

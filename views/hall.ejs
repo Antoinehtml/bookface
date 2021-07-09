@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BookFace - The Hall</title>
+	<link rel="stylesheet" type="text/css" href="static/stylesheets/hall.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<container class="main">
+		<nav>
+			<a href="/hall">BookFace</a>
+			<input type="text" placeholder="Search on BookFace">
+			<a href="/dashboard">Profile</a>
+		</nav>
+		<section class="posts">
+			
+		</section>
+
+		<section class="postFetched">
+			<div class="writepost">
+				<div class="img">
+					<img src="" alt="">
+					IMG
+				</div>
+				<div class="inputPost">
+					<form action="/posts/new" method="POST">
+						<input id='inputUser' type="text" placeholder="Write a Post" name="postcontent">
+						<button id='buttonToSend' type="submit">Post</button>
+					</form>
+				</div>
+			</div>
+			<div class="yourPost">
+				<p>Recent posts</p>
+				<% content.forEach((cont) =>{ %>
+					<div class="postFetch">
+						<div class="name">
+							<h3><%= cont.name %></h3>
+						</div>
+						<p><%= cont.postcontent %></p>
+						<h5><%= cont.date %></h5>
+					</div>
+				<% })%>
+
+			</div>
+		</section>
+	</container>
+	<script src="static/scripts/index.js"></script>
+</body>
+</html>

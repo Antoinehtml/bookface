@@ -1,6 +1,7 @@
 const express = require('express');
 const router  = express.Router();
 const {ensureAuthenticated} = require("../config/auth.js")
+const Post = require("../models/post.js")
 
 //login page
 router.get('/', (req,res)=>{
@@ -16,7 +17,6 @@ router.get('/dashboard', ensureAuthenticated,(req,res)=>{
 router.get('/register', (req,res)=>{
     res.render('register');
 })
-
 
 
 module.exports = router; 
