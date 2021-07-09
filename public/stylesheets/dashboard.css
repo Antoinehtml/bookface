@@ -4,10 +4,31 @@
 	box-sizing: border-box;
 }
 
+body{
+	font-family: 'Quicksand', sans-serif;
+}
+
 nav{
 	display: flex;
 	justify-content: space-between;
 	margin: 50px;
+}
+
+nav a{
+	text-decoration: none;
+	color: #00bcd4;
+	font-weight: 700;
+}
+
+.profile{
+	display: flex;
+    flex-direction: column;
+}
+
+.profile a:nth-child(2){
+	font-weight: 400;
+	font-size: 0.8em;
+	text-align: center;
 }
 
 .welcome{
@@ -28,6 +49,10 @@ nav{
 }
 
 .infos h3{
+	margin-bottom: 15px;
+}
+
+.infos p{
 	margin-bottom: 15px;
 }
 

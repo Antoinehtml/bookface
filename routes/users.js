@@ -4,6 +4,7 @@ const User = require("../models/user.js")
 const bcrypt = require('bcrypt')
 const passport = require('passport');
 
+
 //login handle
 router.get('/login',(req,res)=>{
     res.render('login');
@@ -11,6 +12,10 @@ router.get('/login',(req,res)=>{
 router.get('/register',(req,res)=>{
     res.render('register')
     })
+
+router.get('/dashboard',(req, res) => {
+  res.render('dashboard.ejs');
+});
 
 //Register handle
 router.post('/register',(req,res)=>{
@@ -82,6 +87,7 @@ router.post('/login',(req,res,next)=>{
         failureFlash : true,
         })(req,res,next);
   })
+
 
 //logout
 router.get('/logout',(req,res)=>{

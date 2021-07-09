@@ -3,14 +3,20 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Bookface - Dashboard</title>
 	<link rel="stylesheet" type="text/css" href="static/stylesheets/dashboard.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 	<nav>
-		<a href="">BookFace</a>
-		<input type="text" placeholder="Search on BookFace">
-		<a href="">Profile</a>
+		<a href="/hall">BookFace</a>
+		<div class="profile">
+			<a href="">Profile</a>
+			<a href="/users/logout">Logout</a>
+		</div>
+		
 	</nav>
 	<section class="welcome">
 		<div class="profil-pic">
@@ -22,12 +28,13 @@
 			</div>
 			<div class="infos">
 				<h3> Welcome <%= user.name %></h1>
-				<a href="/users/logout">Logout</a>
+				<p>Member since <%= user.date %></p>
 			</div>
 		</div>
 		<div></div>
 		
 	</section>
+	
 	<section class="post">
 		<div class="yourPost">
 			<p>Your recent posts</p>
@@ -35,15 +42,7 @@
 				<h5>Date: 07.06.21</h5>
 				<p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque delectus quam ipsum voluptatem consectetur temporibus alias libero aliquam vero. Molestias, eum dolorum blanditiis enim ullam dolore, aliquam vero voluptates ab."</p>
 			</div>
-			<div class="postFetch">
-				<h5>Date: 07.06.21</h5>
-				<p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque delectus quam ipsum voluptatem consectetur temporibus alias libero aliquam vero. Molestias, eum dolorum blanditiis enim ullam dolore, aliquam vero voluptates ab."</p>
-			</div>
-			<div class="postFetch">
-				<h5>Date: 07.06.21</h5>
-				<p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque delectus quam ipsum voluptatem consectetur temporibus alias libero aliquam vero. Molestias, eum dolorum blanditiis enim ullam dolore, aliquam vero voluptates ab."</p>
-			</div>
-			
+						
 		</div>
 	</section>
 

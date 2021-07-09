@@ -9,6 +9,11 @@ const flash = require('connect-flash');
 const session = require('express-session');
 const passport = require('passport');
 require("./config/passport")(passport)
+const Post = require("./models/post.js")
+
+
+
+
 
 //mongoose - mongoose.connect() link to atlas mandatory.
 mongoose.connect('mongodb+srv://antoinecln:Becode@bookface.dve24.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',{useNewUrlParser: true, useUnifiedTopology : true})
@@ -19,6 +24,20 @@ mongoose.connect('mongodb+srv://antoinecln:Becode@bookface.dve24.mongodb.net/myF
 app.use("/static", express.static("public"));
 app.set('view engine','ejs');
 // app.use(expressEjsLayout);
+
+app.get('/hall',(req, res) => {
+  Post.find({}, (errors, posts) => {
+    console.log(posts)
+    res.render('hall.ejs', {content: posts});
+  }).sort({date: -1});
+});
+
+// app.get('/dashboard',(req, res) => {
+//   Post.find({}, (errors, posts) => {
+//     console.log(posts)
+//     res.render('dashboard.ejs', {content: posts});
+//   });
+// });
 
 //BodyParser
 app.use(express.urlencoded({extended : false}));
@@ -42,5 +61,9 @@ app.use(session({
 //Routes
 app.use('/',require('./routes/index'));
 app.use('/users',require('./routes/users'));
+app.use('/posts',require('./routes/posts'))
+
+
+
 
 app.listen(3000); 
