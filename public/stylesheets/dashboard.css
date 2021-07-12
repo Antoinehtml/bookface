@@ -25,11 +25,48 @@ nav a{
     flex-direction: column;
 }
 
-.profile a:nth-child(2){
+.icon{
+	text-align: right;
+}
+
+.icon i{
+	color: #00bcd4;
+}
+
+/*#logout a{
 	font-weight: 400;
 	font-size: 0.8em;
 	text-align: center;
+}*/
+
+.hidden{
+	display: none;
 }
+
+
+
+.menu{
+	display: flex;
+    flex-direction: column;
+	text-align: right;
+	background-color: #f0f2f5;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.menu a {
+	font-weight: 400;
+	font-size: 0.8em;
+}
+
+/*.menu a:nth-child(1){
+	margin-top: 15px;
+}*/
+
+/*#logout{
+	display: flex;
+    flex-direction: column;
+}*/
 
 .welcome{
 	display: flex;
