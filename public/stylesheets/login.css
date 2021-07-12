@@ -59,7 +59,7 @@ body{
 }
 
 .card p{
-	margin-top: 40px;
+	margin-top: 20px;
 }
 
 .card a{
@@ -87,5 +87,9 @@ body{
 @media screen and (min-width:  1200px){
 	.card{
 		margin: 150px 300px;
+
 	}
+	.card p{
+	margin-top: 40px;
+}
 }

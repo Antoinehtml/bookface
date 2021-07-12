@@ -17,6 +17,13 @@ nav{
 	background: #00bcd4;
 }
 
+nav input{
+	font-family: 'Quicksand', sans-serif;
+	border-radius: 12px;
+    border: none;
+    padding: 5px;
+}
+
 nav a{
 	text-decoration: none;
 	color: white;
@@ -57,7 +64,6 @@ nav a{
 .postFetched{
 	padding: 50px 300px;
 	background-color: #f0f2f5;
-	    height: 100vh;
 }
 
 .post{
