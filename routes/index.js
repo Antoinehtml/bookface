@@ -8,12 +8,23 @@ router.get('/', (req,res)=>{
     res.render('welcome');
 })
 
+// dashboard page
+
 router.get('/dashboard', ensureAuthenticated,(req,res)=>{
-    Post.find({}, (errors, posts) => {
+    Post.find({user_id: req.user._id}, (errors, posts) => {
         console.log(posts)
         res.render('dashboard',{user: req.user, content: posts});
-      });
+      }).sort({date: -1});  
 })
+
+// Hall page
+
+router.get('/hall',(req, res) => {
+  Post.find({}, (errors, posts) => {
+    console.log(posts)
+    res.render('hall.ejs', {content: posts});
+  }).sort({date: -1});
+});
 
 
 // register page
