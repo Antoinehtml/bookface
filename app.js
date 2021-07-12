@@ -32,12 +32,6 @@ app.get('/hall',(req, res) => {
   }).sort({date: -1});
 });
 
-// app.get('/dashboard',(req, res) => {
-//   Post.find({}, (errors, posts) => {
-//     console.log(posts)
-//     res.render('dashboard.ejs', {content: posts});
-//   });
-// });
 
 //BodyParser
 app.use(express.urlencoded({extended : false}));
