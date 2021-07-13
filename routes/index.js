@@ -20,10 +20,18 @@ router.get('/dashboard', ensureAuthenticated,(req,res)=>{
 // Hall page
 
 router.get('/hall',(req, res) => {
-  Post.find({}, (errors, posts) => {
-    console.log(posts)
-    res.render('hall.ejs', {content: posts});
-  }).sort({date: -1});
+    if(req.query.search){
+        const regex = new RegExp(escapeRegex(req.query.search), 'gi');
+        Post.find({name: regex}, (errors, posts) => {
+            res.render('hall.ejs', {content: posts});
+        }).sort({date: -1}); 
+   }else{
+        Post.find({}, (errors, posts) => {
+            console.log(posts)
+            res.render('hall.ejs', {content: posts});
+          }).sort({date: -1});
+   }
+      
 });
 
 
@@ -32,5 +40,10 @@ router.get('/register', (req,res)=>{
     res.render('register');
 })
 
+
+
+function escapeRegex(text) {
+    return text.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, "\\$&");
+};
 
 module.exports = router; 

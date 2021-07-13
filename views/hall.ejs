@@ -14,7 +14,11 @@
 	<container class="main">
 		<nav>
 			<a href="/hall">BookFace</a>
-			<input type="text" placeholder="Search on BookFace">
+			<form action="/hall" method="GET">
+				<input type="text" name="search" placeholder="Search on BookFace...">
+				<input type="submit" value="Search">
+			</form>
+			
 			<div class="profile">
 			<div class="icon" id="prof"><i class="fas fa-user"></i></div>
 			<div class="hidden" id="logout">
