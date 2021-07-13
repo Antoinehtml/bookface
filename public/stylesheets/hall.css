@@ -30,10 +30,57 @@ nav a{
 	font-weight: 700;
 }
 
+nav a:hover{
+	color: #ffce86;
+}
+
+.profile{
+	display: flex;
+    flex-direction: column;
+}
+
+.icon{
+	text-align: right;
+	cursor: pointer;
+}
+
+
+
+.icon i{
+	color: white;
+}
+
+.icon i:hover{
+	color: #ffce86;
+}
+
+
+.hidden{
+	display: none;
+}
+
+.menu{
+	display: flex;
+    flex-direction: column;
+	text-align: right;
+	background-color: #f0f2f578;
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    top: 8%;
+    right: 9%;
+}
+
+.menu a {
+	font-weight: 700;
+	font-size: 0.8em;
+}
+
 .writepost{
 	display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 25px;
 }
 
 .img{
@@ -59,6 +106,7 @@ nav a{
     border: none;
     background: #00bcd4;
     color: white;
+    cursor: pointer;
 }
 
 .postFetched{
@@ -80,6 +128,7 @@ nav a{
 
 .yourPost p {
 	margin-bottom: 25px;
+	font-weight: 700;
 }
 
 .postFetch{
@@ -107,4 +156,40 @@ nav a{
 
 .postFetch p{
 	padding: 0 45px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width:  300px){
+	.postFetched {
+    padding: 5px 10px;
+}
+
+
+@media screen and (min-width:  600px){
+	.menu{
+    right: 7%;
+	}
+	.postFetched {
+    padding: 5px 100px;
+}
+
+}
+
+@media screen and (min-width:  800px){
+	.menu{
+    right: 6%;
+	}
+}
+
+@media screen and (min-width:  1000px){
+	.menu{
+    right: 4%;
+	}
+}
+
+@media screen and (min-width:  1200px){
+	.menu{
+    right: 2%;
+	}
 }
