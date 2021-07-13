@@ -53,6 +53,9 @@
 						<div class="name">
 							<h3><%= cont.name %></h3>
 						</div>
+						<%if(currentUser && cont.user_id == currentUser._id){%>
+						<a href="/posts/delete/<%=cont._id%>">Delete</a>
+						<%}%>
 						<p><%= cont.postcontent %></p>
 						<h5><%= cont.date %></h5>
 					</div>
