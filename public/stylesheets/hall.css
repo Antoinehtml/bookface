@@ -136,7 +136,7 @@ nav a:hover{
 	background: white;
 	box-shadow: grey 0px 3px 8px -1px;
 	border-radius: 10px;
-	margin-bottom: 25px;
+	margin-bottom: 5px;
 }
 
 .postFetch .name{
@@ -155,8 +155,25 @@ nav a:hover{
 	padding: 15px;
 }
 
+
 .postFetch p{
 	padding: 0 45px;
+}
+
+.delete{
+	text-align: end;
+	margin-bottom: 25px;
+}
+
+.delete a{
+	text-decoration: none;
+	color: black;
+	font-weight: 400;
+}
+
+.delete a:hover{
+	color: #ffce86;
+	font-weight: 700;
 }
 
 /* MEDIA QUERIES */
