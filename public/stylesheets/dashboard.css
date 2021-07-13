@@ -74,6 +74,16 @@ nav a:hover{
     flex-direction: column;
 }*/
 
+.cloudinary button{
+	background-color: #f0f2f5;
+    color: black;
+    border: none;
+    box-shadow: grey 0px 3px 8px -1px;
+    font-weight: 700;
+}
+	
+
+
 .welcome{
 	display: flex;
 	justify-content: space-around;
