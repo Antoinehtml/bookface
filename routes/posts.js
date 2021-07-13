@@ -14,5 +14,12 @@ router.post("/new", async (req, res) => {
 
 });
 
+router.get("/delete/:id", (req, res) => {
+  Post.findByIdAndDelete({_id: req.params.id}, (err, del) => {
+    console.log("delete: ", del);
+})
+  res.redirect("back")
+})
+
 
 module.exports  = router;
