@@ -20,6 +20,10 @@ nav a{
 	font-weight: 700;
 }
 
+nav a:hover{
+	color: #ffce86;
+}
+
 .profile{
 	display: flex;
     flex-direction: column;
@@ -31,13 +35,12 @@ nav a{
 
 .icon i{
 	color: #00bcd4;
+	cursor: pointer;
 }
 
-/*#logout a{
-	font-weight: 400;
-	font-size: 0.8em;
-	text-align: center;
-}*/
+.icon i:hover{
+	color: #ffce86;
+}
 
 .hidden{
 	display: none;
@@ -49,13 +52,16 @@ nav a{
 	display: flex;
     flex-direction: column;
 	text-align: right;
-	background-color: #f0f2f5;
+	background-color: #f0f2f578;
     border-radius: 5px;
     padding: 10px;
+    position: absolute;
+    top: 8%;
+    right: 9%;
 }
 
 .menu a {
-	font-weight: 400;
+	font-weight: 700;
 	font-size: 0.8em;
 }
 
@@ -141,4 +147,31 @@ nav a{
 
 .postFetch p{
 	padding: 15px 15px 30px;
+}
+
+/* MEDIA QUERIES */
+
+
+@media screen and (min-width:  600px){
+	.menu{
+    right: 7%;
+	}
+}
+
+@media screen and (min-width:  800px){
+	.menu{
+    right: 6%;
+	}
+}
+
+@media screen and (min-width:  1000px){
+	.menu{
+    right: 4%;
+	}
+}
+
+@media screen and (min-width:  1200px){
+	.menu{
+    right: 2%;
+	}
 }
