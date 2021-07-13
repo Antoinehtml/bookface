@@ -25,6 +25,10 @@ nav input{
     padding: 5px;
 }
 
+nav input:nth-child(2){
+	cursor: pointer;	
+}
+
 nav a{
 	text-decoration: none;
 	color: white;
